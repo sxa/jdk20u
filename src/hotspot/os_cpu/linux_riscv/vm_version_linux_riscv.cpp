@@ -110,8 +110,7 @@ void VM_Version::get_os_cpu_info() {
       HWCAP_ISA_A |
       HWCAP_ISA_F |
       HWCAP_ISA_D |
-      HWCAP_ISA_C |
-      HWCAP_ISA_V);
+      HWCAP_ISA_C);
 
   if (FILE *f = fopen("/proc/cpuinfo", "r")) {
     char buf[512], *p;
